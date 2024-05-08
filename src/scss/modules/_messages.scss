@@ -1,5 +1,73 @@
 .messages {
-  height: 150px;
+  height: calc(100vh - 200px);
   border: 1px solid #ccc;
   overflow: auto;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar {
+  width: 23px;
+}
+
+::-webkit-scrollbar-track {
+  border: 3px solid #eed0de;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eed0de;
+  box-shadow: 0px 2px 0px 0px #ffe7f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b4829a;
+  box-shadow: 0px 2px 0px 0px #ffe7f3;
+}
+
+.message {
+  border: 1px solid #eed0de;
+  background: #fff;
+  box-shadow: 4px 4px 1px 0px #eed0de;
+  display: flex;
+  padding: 50px 0;
+  background-image: url(.././img/line.png);
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 7px;
+}
+
+.message-text {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.message-user {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  border-radius: 0px 7px;
+  background: #eed0de;
+  top: 0;
+  padding: 0 0 0 10px;
+}
+
+.message-time {
+  color: #dab8c8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 15px;
+}
+
+.is-mine {
+  justify-content: end;
+  right: 0;
 }
