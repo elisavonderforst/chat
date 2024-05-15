@@ -41,8 +41,13 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  border-bottom: 3px dotted white;
+}
+
 header {
   background: #e2c7f7;
+  padding: 20px;
 }
 
 img,

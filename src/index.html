@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <a href="static.html">Version statique</a>
+    <header>
+      <a href="static.html">Version statique</a>
+    </header>
 
     <!-- Ne pas enlever data-messages! -->
     <div class="messages" data-messages></div>
 
     <!-- Ne pas enlever data-form, et ne pas changer le name des inputs! -->
     <form data-form>
-      <input type="text" name="author" placeholder="Nom" />
+      <input class="nom" type="text" name="author" placeholder="Nom" />
       <input type="text" name="text" placeholder="Message" />
-      <button type="submit">Envoyer</button>
+      <button type="submit"><img src="img/Arrow.png" alt="" /></button>
     </form>
 
     <script src="js/main.js" type="module"></script>

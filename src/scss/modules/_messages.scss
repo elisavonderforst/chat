@@ -3,6 +3,10 @@
   border: 1px solid #ccc;
   overflow: auto;
   border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +33,7 @@
   background: #fff;
   box-shadow: 4px 4px 1px 0px #eed0de;
   display: flex;
-  padding: 50px 0;
+  padding: 50px 0 20px;
   background-image: url(.././img/line.png);
   position: relative;
   margin-right: 20px;
@@ -43,6 +47,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .message-user {
@@ -52,10 +58,10 @@
   font-weight: 400;
   line-height: normal;
   position: absolute;
-  border-radius: 0px 7px;
   background: #eed0de;
   top: 0;
-  padding: 0 0 0 10px;
+  padding: 0 10px 0 0;
+  border-radius: 7px 0;
 }
 
 .message-time {
@@ -65,9 +71,68 @@
   font-weight: 400;
   line-height: normal;
   margin: 15px;
+  align-self: center;
 }
 
 .is-mine {
   justify-content: end;
   right: 0;
+  align-self: flex-end;
+}
+
+.is-mine .message-user {
+  padding-left: 10px;
+  padding-right: 0;
+  border-radius: 0px 7px;
+}
+
+img {
+  padding-right: 10px;
+}
+
+.is-mine img {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+form {
+  display: flex;
+  margin-top: 20px;
+  background: #e2c7f7;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  background: white;
+  border: none;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-left: 3px dotted #e2c7f7;
+  padding-left: 5px;
+}
+
+input {
+  border: none;
+  height: 45px;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding-left: 10px;
+  border-left: 3px dotted #e2c7f7;
+}
+
+.nom {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-left: none;
+}
+
+input::placeholder {
+  font-family: "VT323", monospace;
+  color: #eed0de;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
